@@ -114,3 +114,9 @@ class YAVNEPrefs(bpy.types.AddonPreferences):
         description = 'Preserves shading discontinuities caused by flat faces',
         default = False
     )
+
+    use_interpolation: bpy.props.BoolProperty(
+        name = 'Use Interpolation',
+        description = 'Use interpolation to calculate normals (POLYINTERP_NEAREST). If unchecked, use direct transfer.',
+        default = True
+    )
